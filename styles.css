@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;500&display=swap');
+
+body{
+    background: conic-gradient(at 125% 50%, #b78cf7, #ff7c94, #ffcf0d, #ff7c94, #b78cf7);
+    font-family: 'Roboto Mono', monospace;
+    overflow: hidden;
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.digitalClock{
+    width: fit-content;
+    height: 300px;
+    margin: auto;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.171);
+    color: white;
+    padding: 20px;
+}
+.digitalClock h1{
+    display: inline-block;
+    font-size: 4rem;
+}
+.digitalClock h1:first-of-type{
+    font-size: 5rem;
+    font-weight: 200;
+}
+@media(max-width:768px){
+    .digitalClock{
+        width:  100%;
+        text-align: center;
+    }
+    #separator1, #separator2{
+        display: none;
+    }
+    .digitalClock h1{
+        display: block;
+    }
+}
+@media(max-width:480px){
+    .digitalClock h1{
+        font-size: 3rem;
+    }
+
+}
